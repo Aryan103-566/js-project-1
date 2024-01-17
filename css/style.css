@@ -1,0 +1,137 @@
+/** COMMON CSS STARTS HERE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "arial";
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+/** COMMON CSS ENDS HERE */
+
+
+/** NAVBAR STARTS HERE */
+nav {
+    padding: 12px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+nav .menuIcon {
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border: none;
+   outline: none;
+   font-size: 25px;
+   color: white;
+   background-color: black;
+   border-radius: 10px;
+   cursor: pointer;
+}
+/** NAVBAR ENDS HERE */
+
+
+/** SIDEBAR STARTS HERE */
+.sidebar {
+    position: fixed;
+    background-color: rgba(24, 24, 24, 0.445);
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.35s;
+}
+.sidebar.trigger {
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar .sidebarCnt {
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    padding-top: 120px;
+    position: relative;
+    transform: translateX(-100%);
+    transition: 0.35s;
+}
+.sidebar.trigger .sidebarCnt {
+    transform: translateX(0%); 
+}
+.sidebar .sidebarCnt a {
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: black;
+    display: block;
+}
+.sidebar .sidebarCnt .cancel{
+    position: absolute;
+    font-size: 25px;
+    top: 30px;
+    right: 20px;
+    color: black;
+    cursor: pointer;
+}
+/** SIDEBAR ENDS HERE */
+
+
+/** PASSWORD FORM STARTS HERE */
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper form {
+    width: 350px;
+    padding: 15px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.wrapper form input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding-left: 25px;
+}
+form .inputWrapper {
+    position: relative;
+}
+.wrapper form .eyeBtn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.wrapper form button {
+    padding: 15px 20px;
+    margin-top: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/** PASSWORD FORM ENDS HERE */
